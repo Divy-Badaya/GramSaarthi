@@ -1,0 +1,288 @@
+{
+  "dairy": {
+    "id": "dairy",
+    "name": "Dairy Farming",
+    "category": "Dairy",
+    "unit_name": "Milch Cows / Buffaloes",
+    "base_scale_units": 5,
+    "min_scale_units": 2,
+    "max_scale_units": 20,
+    "cost_per_animal": 75000,
+    "fixed_costs": {
+      "shed_and_civil_work": 120000,
+      "machinery_and_milking_equipment": 60000,
+      "initial_fodder_and_feed": 50000,
+      "working_capital_reserve": 40000,
+      "miscellaneous_contingency": 30000
+    },
+    "variable_costs_monthly_per_animal": {
+      "feed_and_concentrate": 5400,
+      "veterinary_and_breeding": 900,
+      "labor_and_handling": 1500
+    },
+    "fixed_overhead_monthly": 4500,
+    "production_assumptions": {
+      "daily_milk_yield_litres_per_animal": 13,
+      "milking_days_per_month": 26,
+      "milk_selling_price_per_litre": 42,
+      "dung_and_byproduct_revenue_monthly_per_animal": 800
+    },
+    "default_interest_rate": 7.0,
+    "default_tenure_months": 60,
+    "default_moratorium_months": 6,
+    "default_margin_pct": 10.0,
+    "applicable_schemes": ["PMMY", "KCC", "NLM", "PMEGP"]
+  },
+  "poultry": {
+    "id": "poultry",
+    "name": "Poultry Farming (Broiler / Layer)",
+    "category": "Poultry",
+    "unit_name": "Birds per Batch",
+    "base_scale_units": 1000,
+    "min_scale_units": 500,
+    "max_scale_units": 10000,
+    "cost_per_bird_capacity": 250,
+    "fixed_costs": {
+      "shed_construction_and_curtains": 200000,
+      "feeders_drinkers_brooders": 60000,
+      "biosecurity_and_water_sanitation": 30000,
+      "working_capital_reserve": 40000,
+      "miscellaneous_contingency": 20000
+    },
+    "variable_costs_monthly_per_100_birds": {
+      "chicks_purchase": 3500,
+      "feed_and_supplements": 14000,
+      "vaccination_and_medicines": 1200
+    },
+    "fixed_overhead_monthly": 6000,
+    "production_assumptions": {
+      "batch_turnaround_days": 42,
+      "batches_per_year": 6,
+      "average_body_weight_kg": 2.1,
+      "live_bird_selling_price_per_kg": 115,
+      "survival_rate_pct": 96
+    },
+    "default_interest_rate": 8.0,
+    "default_tenure_months": 60,
+    "default_moratorium_months": 6,
+    "default_margin_pct": 15.0,
+    "applicable_schemes": ["PMMY", "NLM", "PMEGP"]
+  },
+  "retail": {
+    "id": "retail",
+    "name": "Retail Shop / Grocery / Agri-Store",
+    "category": "Retail",
+    "unit_name": "Shop Scale Category",
+    "base_scale_units": 1,
+    "min_scale_units": 1,
+    "max_scale_units": 5,
+    "fixed_costs": {
+      "shop_renovation_and_racks": 70000,
+      "pos_billing_and_refrigeration": 35000,
+      "initial_merchandise_inventory": 180000,
+      "advance_rental_deposit": 25000,
+      "working_capital_cash_buffer": 40000
+    },
+    "variable_costs_pct_of_sales": {
+      "cost_of_goods_sold_pct": 78.0,
+      "spoilage_and_leakage_pct": 2.0
+    },
+    "fixed_overhead_monthly": 11000,
+    "production_assumptions": {
+      "base_daily_sales": 3200,
+      "operating_days_per_month": 28,
+      "peak_multiplier": 1.2
+    },
+    "default_interest_rate": 8.5,
+    "default_tenure_months": 48,
+    "default_moratorium_months": 3,
+    "default_margin_pct": 10.0,
+    "applicable_schemes": ["PMMY", "PMEGP"]
+  },
+  "textile": {
+    "id": "textile",
+    "name": "Tailoring & Garment Manufacturing Unit",
+    "category": "Textile",
+    "unit_name": "Sewing Workstations",
+    "base_scale_units": 4,
+    "min_scale_units": 2,
+    "max_scale_units": 15,
+    "cost_per_workstation": 32000,
+    "fixed_costs": {
+      "industrial_sewing_machines": 128000,
+      "overlock_and_interlock_units": 45000,
+      "cutting_tables_and_steam_iron": 30000,
+      "fabric_and_accessories_inventory": 50000,
+      "premises_electrification_and_interior": 25000
+    },
+    "variable_costs_monthly_per_station": {
+      "raw_fabric_and_threads": 6500,
+      "packaging_and_transport": 1200,
+      "artisan_labor_cost": 8500
+    },
+    "fixed_overhead_monthly": 7500,
+    "production_assumptions": {
+      "garments_stitched_per_day_per_station": 6,
+      "working_days_per_month": 26,
+      "average_stitching_charges_per_garment": 140
+    },
+    "default_interest_rate": 7.5,
+    "default_tenure_months": 60,
+    "default_moratorium_months": 3,
+    "default_margin_pct": 15.0,
+    "applicable_schemes": ["PMVISHWAKARMA", "PMMY", "PMEGP"]
+  },
+  "food": {
+    "id": "food",
+    "name": "Food Processing & Flour Mill (Atta Chakkhi)",
+    "category": "Food Business",
+    "unit_name": "Milling / Processing Plant",
+    "base_scale_units": 1,
+    "min_scale_units": 1,
+    "max_scale_units": 4,
+    "fixed_costs": {
+      "heavy_flour_mill_and_motor": 180000,
+      "spice_pulverizer_and_destoner": 85000,
+      "3phase_commercial_power_setup": 55000,
+      "grain_and_spice_raw_stock": 70000,
+      "hygienic_weighing_and_packaging_unit": 35000
+    },
+    "variable_costs_pct_of_sales": {
+      "raw_grain_procurement_pct": 68.0,
+      "commercial_electricity_and_spares_pct": 8.0,
+      "packaging_bags_and_pouches_pct": 3.0
+    },
+    "fixed_overhead_monthly": 9500,
+    "production_assumptions": {
+      "base_daily_milling_kg": 450,
+      "operating_days_per_month": 26,
+      "milling_service_rate_per_kg": 4.5,
+      "packaged_flour_sales_monthly": 42000
+    },
+    "default_interest_rate": 8.0,
+    "default_tenure_months": 60,
+    "default_moratorium_months": 4,
+    "default_margin_pct": 15.0,
+    "applicable_schemes": ["PMFME", "PMMY", "PMEGP"]
+  },
+  "fisheries": {
+    "id": "fisheries",
+    "name": "Freshwater Aquaculture & Fisheries",
+    "category": "Fisheries",
+    "unit_name": "Pond Acreage / Biofloc Tanks",
+    "base_scale_units": 1,
+    "min_scale_units": 1,
+    "max_scale_units": 5,
+    "fixed_costs": {
+      "pond_excavation_and_dyke_bunding": 150000,
+      "water_aerators_and_pumps": 65000,
+      "seed_fingerlings_and_acclimatization": 45000,
+      "feed_storage_and_fencing": 30000,
+      "water_testing_kits_and_probiotics": 20000
+    },
+    "variable_costs_monthly_per_acre": {
+      "floating_pellet_feed": 14000,
+      "medicines_and_lime_treatment": 2500,
+      "electricity_and_diesel_pumping": 3500
+    },
+    "fixed_overhead_monthly": 6500,
+    "production_assumptions": {
+      "harvest_yield_kg_per_year": 4000,
+      "average_farmgate_price_per_kg": 150,
+      "harvest_cycles_per_year": 2
+    },
+    "default_interest_rate": 7.0,
+    "default_tenure_months": 60,
+    "default_moratorium_months": 6,
+    "default_margin_pct": 10.0,
+    "applicable_schemes": ["PMMSY", "KCC", "PMMY"]
+  },
+  "transport": {
+    "id": "transport",
+    "name": "Rural Transport & Mini-Truck Logistics",
+    "category": "Transport",
+    "unit_name": "Commercial Vehicles",
+    "base_scale_units": 1,
+    "min_scale_units": 1,
+    "max_scale_units": 3,
+    "fixed_costs": {
+      "vehicle_initial_downpayment_and_chassis": 220000,
+      "cargo_body_fabrication": 75000,
+      "commercial_permit_and_fitness": 35000,
+      "comprehensive_annual_insurance": 40000,
+      "emergency_breakdown_reserve": 30000
+    },
+    "variable_costs_monthly_per_vehicle": {
+      "diesel_fuel_and_toll": 24000,
+      "lubricants_and_regular_service": 4000,
+      "tyre_wear_and_depreciation": 3000
+    },
+    "fixed_overhead_monthly": 5000,
+    "production_assumptions": {
+      "average_trips_per_month": 48,
+      "average_freight_rate_per_trip": 1450
+    },
+    "default_interest_rate": 8.5,
+    "default_tenure_months": 60,
+    "default_moratorium_months": 2,
+    "default_margin_pct": 15.0,
+    "applicable_schemes": ["PMMY", "STANDUP_INDIA"]
+  },
+  "agriculture": {
+    "id": "agriculture",
+    "name": "Agri-Input Store & Modern Nursery",
+    "category": "Agriculture",
+    "unit_name": "Store & Polyhouse Unit",
+    "base_scale_units": 1,
+    "min_scale_units": 1,
+    "max_scale_units": 4,
+    "fixed_costs": {
+      "shade_net_and_display_infrastructure": 85000,
+      "fertilizer_and_certified_seed_stock": 160000,
+      "organic_biofertilizers_and_tools": 45000,
+      "dealer_license_and_premises_deposit": 30000,
+      "working_capital_cash_buffer": 35000
+    },
+    "variable_costs_pct_of_sales": {
+      "cost_of_goods_sold_pct": 74.0,
+      "logistics_and_handling_pct": 4.0
+    },
+    "fixed_overhead_monthly": 8500,
+    "production_assumptions": {
+      "base_daily_sales": 2900,
+      "operating_days_per_month": 28
+    },
+    "default_interest_rate": 7.0,
+    "default_tenure_months": 60,
+    "default_moratorium_months": 3,
+    "default_margin_pct": 10.0,
+    "applicable_schemes": ["KCC", "PMMY", "PMEGP"]
+  },
+  "generic": {
+    "id": "generic",
+    "name": "Rural Micro Enterprise",
+    "category": "General",
+    "unit_name": "Enterprise Setup",
+    "base_scale_units": 1,
+    "min_scale_units": 1,
+    "max_scale_units": 5,
+    "fixed_costs": {
+      "tools_equipment_and_workspace": 150000,
+      "initial_raw_materials_inventory": 100000,
+      "licensing_and_utility_installation": 40000,
+      "working_capital_cash_buffer": 35000
+    },
+    "variable_costs_pct_of_sales": {
+      "direct_operating_costs_pct": 65.0
+    },
+    "fixed_overhead_monthly": 7000,
+    "production_assumptions": {
+      "base_monthly_turnover": 65000
+    },
+    "default_interest_rate": 8.0,
+    "default_tenure_months": 60,
+    "default_moratorium_months": 3,
+    "default_margin_pct": 10.0,
+    "applicable_schemes": ["PMMY", "PMEGP"]
+  }
+}
