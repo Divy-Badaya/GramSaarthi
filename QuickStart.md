@@ -28,7 +28,7 @@ git --version
 
 Open a terminal and run:
 ```bash
-git clone https://github.com/YOUR_USERNAME/GRAMSAARTHI.git
+git clone https://github.com/Divy-Badaya/GRAMSAARTHI.git
 ```
 Then enter the project directory:
 ```
